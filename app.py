@@ -2,11 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
-# ------------------------------------------------------------------ #
-# Routes                                                              #
-# ------------------------------------------------------------------ #
-
 @app.route("/")
 def landing():
     return render_template("landing.html")
@@ -32,9 +27,6 @@ def privacy():
     return render_template("privacy.html")
 
 
-# ------------------------------------------------------------------ #
-# Placeholder routes — students will implement these                  #
-# ------------------------------------------------------------------ #
 
 @app.route("/logout")
 def logout():
